@@ -4,7 +4,7 @@ date: 2025-04-29T00:28:49-04:00
 draft: false
 ---
 
-After high school, I was lost and drifted from factory job to factory job until I decided to enlist in the army. That lasted a few years, taught me a few good lessons, and better prepared me for a life of hard work.  Bit in other ways it wasn't good for me.
+After high school, I was lost and drifted from factory job to factory job until I decided to enlist in the army. That lasted a few years, taught me a few good lessons, and better prepared me for a life of hard work.  But in other ways it wasn't good for me.
 
 The next phase of my life was a bit of a rebellion. After the military, I grew my hair out, grew my goat out, and again drifted from job to job. It wasn't until I played some EVE Online and got in some voice channels with other adults that I realized... I only have EVE Online to talk about with these people. I had no career, no prospects, no stable job even... let alone a family of my own. So I decided to go to school and try to break into the tech industry.
 
@@ -33,7 +33,7 @@ Not long after that, I was hacking my first program for EVE Online to better hel
   * Mostly working, seems to have gremlins in warehouse management though.
   * Written in [Java](https://github.com/maurerit/vs-industry-backend) and [TypeScript](https://github.com/maurerit/vs-industry-frontend).
 
-There were other personal projects intermingled amongst that mess of code. I once built a little autonomous tank out of popsicle sticks, a wooden plank, some tank treads I got from a hobby shop, twin motors, an 8-count AA battery pack, Arduino, and an Arduino motor driver board. I bet I still have that code on my Mac... at least I think I developed it on my Mac...
+There were other personal projects intermingled amongst that mess of code. I once built a little [autonomous tank](/post/2025/04/my-autonomous-tank) out of popsicle sticks, a wooden plank, some tank treads I got from a hobby shop, twin motors, an 8-count AA battery pack, Arduino, and an Arduino motor driver board. I bet I still have that code on my Mac... at least I think I developed it on my Mac...
 
 Anyways, it only turned left. I ended up blowing up the heap on the little Arduino because I didn't manage my memory properly. I _THINK_ I know how I went wrong, but without the code, I couldn't be sure. Fairly certain my linked list implementation didn't free when it went to scan the area again. I mostly gave up after that incident because I was pretty worn out I think.  I needed a pallete refresher.
 
