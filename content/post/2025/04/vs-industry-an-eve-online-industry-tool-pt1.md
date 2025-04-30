@@ -1,0 +1,26 @@
+---
+title: "VS-Industry an Eve Online Industry Tool Pt1"
+date: 2025-04-30T00:00:00-04:00
+author: Matthew Maurer [maurerit](https://github.com/maurerit)
+draft: false
+---
+
+I've been working on a side project since the summer of 2024 for my activities in EVE Online. I run a manufacturing corporation with three other guys. In total, we have nine characters building drones near one of the game's trade hubs. While I have a good idea of what each drone is costing us, I can never be sure how close I'm coming to build costs as I lower prices to be more competitive. So, I kick-started this side project.
+
+This side project is essentially a warehousing implementation with additional features added out of necessity and for fun. For example, authentication—we need a valid token when downloading wallet transactions, wallet journal transactions, and industry jobs. The warehouse is programmed to analyze these transactions and update its inventory accordingly. An industry job comes in—it sees this and increments the stock by the run count of the job. A market sell transaction comes in—decrement the stock. And when a buy transaction comes in, increment the stock. Basic warehousing, keeping track of what is in store.
+
+The warehouse is also aware of how much an item costs. Simple equation really, input * runs + job cost. So when an industry job comes in, we know something was built, we know what that item required to be built and we know how much each of those inputs cost us. We either built them and did this with that item or we bought it and the price is what we paid. Then we do a rolling average with the new items and the old items to get the new adjusted price per item. These are the basic operations I wanted this app to perform.
+
+So I started a backend... again. At first, this backend handled the authentication because it HAD to so that it could interact with EVE Online's APIs. This is an OAuth authentication and Spring handles this out of the box. I recently FINALLY learned how to add new providers. The documentation for this never struck home that you could add new ones and I was always too impatient to dig into it. In the past couple of years, I can't tell you how many times I've configured OAuth providers in a Spring app, so I've learned how to do this and the underpinnings fairly well.
+
+The next part was actually writing the bits and bobs to download the API data and store it. So, I open up the ESI (EVE Swagger Interface) docs and find my APIs, copying their output samples and having Copilot generate DTOs for me. I needed to store this data, so I generated some tables and some JPA entities. Another thing Crown has taught me is database changes using Flyway. I've used Liquibase in the past, but after using Flyway I'll never go back. There's just something to being in the language that the database interprets instead of being separated by a layer of indirection. So now I could download and store the data.
+
+After that, I needed to understand how much of what an item requires to be built. I didn't really feel like going through the whole storing what BP's are around and what their ME levels are, so I just opted for the tables holding the values that they will ultimately use. No equations to muck things up this time, just raw numbers that are easy to interpret. A lesson I learned from the last attempt at this program. Although this will lead to some inaccuracies when doing large batches of builds, I'm not too concerned because the majority of our builds are only 10 items. And these 10 items have build requirements that the equation barely even touches. So why go digging through the internet to find the right equation and then extract the bits we use? I just want to deal with the build requirements as a flat number.
+
+With Copilot's help, I managed to get a basic backend built in a weekend. The warehouse implementation was really rough and buggy, and it soon took its toll on me.  I used it for I think a couple of months and then I stepped away for a while.
+
+The whole time I was away, it was eating me up that I didn't get the warehouse right. Not only was its scope just too big, but it was also just terribly written. So the first thing I did when coming back was rewrite that sucker. I separated it into two things: a processor and the warehouse. The warehouse's job was simple—interact with the DB, incrementing and decrementing things and returning costs. Simple. The processor fetched all unprocessed records, sorted them ascending, and sent them into handler methods that interacted with the warehouse. Done.
+
+I still have some gremlins; it's as if some of my transactions or industry jobs are being 'dropped'. It doesn't happen all the time, and I haven't been able to narrow in on when it happens. I'll keep digging and hopefully come up with an answer. Or better yet, I finally write some unit tests... but who wants to do that on a side project that no one will ever use but you?
+
+So, with all this, I have a backend that can interact with external APIs, store data, and serve up data. At this point, I'd been interacting with this through SQL queries. And since I'm using H2 as my database, I can't query it when the app is running... So it was a bear to work with. I needed a UI.
