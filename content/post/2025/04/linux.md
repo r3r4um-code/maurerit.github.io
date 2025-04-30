@@ -5,7 +5,7 @@ author: Matthew Maurer [maurerit](https://github.com/maurerit)
 draft: false
 ---
 
-I finally decided to go full-time Linux. I was on Windows 11 with this new laptop because, of course, your laptop will come with Windows... what other operating system is there? I couldn't really stand it, though, and I used it less and less after the novelty of the hardware wore off. This was strictly Windows' fault: its lack of customization, terrible terminal and scripting languages, stupid drives instead of mount points... and it's slow. So off to Linux I went.
+I finally decided to go full-time Linux again. I was on Windows 11 with this new laptop because, of course, your laptop will come with Windows... what other operating system is there? I couldn't really stand it, though, and I used it less and less after the novelty of the hardware wore off. This was strictly Windows' fault: its lack of customization, terrible terminal and scripting languages, stupid drives instead of mount points... and it's slow. So off to Linux I went.
 
 I wasn't sure what distro I wanted to run, so I browsed through all the big names and even downloaded an Arch ISO. I tried Mint, Fedora, Debian, Nobara, openSUSE, and Pop!_OS. I REALLY wanted Pop!_OS to work, but I couldn't get EVE Online running properly—not through Steam, not through Lutris, and not through Bottles. I didn't try vanilla Wine, though; maybe I should have. I was able to get Debian, Fedora, Nobara, and Mint to work through Steam, so they were all on the short list. I hate RPMs, though, due to my past before a package manager hit RedHat (my first distro years ago). So that left me with Debian and Mint.
 

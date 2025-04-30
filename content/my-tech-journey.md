@@ -1,6 +1,7 @@
 ---
 title: "My Tech Journey"
 date: 2025-04-29T00:28:49-04:00
+author: Matthew Maurer [maurerit](https://github.com/maurerit)
 draft: false
 ---
 
