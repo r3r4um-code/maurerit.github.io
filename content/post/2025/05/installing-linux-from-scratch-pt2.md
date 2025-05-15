@@ -2,7 +2,7 @@
 title: "Installing Linux From Scratch Pt2"
 date: 2025-05-15T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 I've now made it to a point in the document where they're talking about udev and how it works along with setting up the init scripts. I think the kernel is coming soon. It'll be interesting to see if my computer tries to melt itself again while compiling the kernel. The glibc compile was quite daunting. Had all 16 of my cores pegged for a good 10 minutes or more. Temps as high as 90°C with the fans blaring full stop. Good stuff.
