@@ -1,6 +1,6 @@
 ---
 title: "Installing Linux From Scratch Pt3"
-date: 2025-05-16T12:24:48-04:00
+date: 2025-05-17T12:24:48-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
 draft: false
 ---
