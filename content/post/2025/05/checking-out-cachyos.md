@@ -1,0 +1,18 @@
+---
+title: "Checking Out CachyOS"
+date: 2025-05-20T00:00:00-04:00
+author: Matthew Maurer [maurerit](https://github.com/maurerit)
+draft: true
+---
+
+I've wanted to try Arch for awhile now but I honestly can't be bothered to install absolutely everything myself.  I'd just end up with a run of the mill Linux and wouldn't venture out to experience new programs.  Like, CachyOS ships eza as a replacement for ls.  I would have never found eza and would never have seen the glory that it is on the cli.  They also aliased `apt` to `man pacman`, lol.  So far, I'm impressed with the OS.
+
+The default KDE configuration was ok although I'm not fond of the direction the KDE team took with forcing a click on the Application Launcher categories to reveal them... like seriously?  Who does that?  Why?  Don't tweak little things like that... let the user pick that if they want it.  Took me a bit to find that configuration option.  I do like how CachyOS had the desktop configured though.  The task bar was nice and tiny, feels smaller than what I have it on Debian at least.  They provided a really slick theme that I found and activated.  Overall, KDE looks good in CachyOS.
+
+I chose to go with btrfs because I want an OS that Timeshift works on without consuming tons of disk space.  I figure having it on an Arch based system is worth it since things can go terribly wrong on the bleeding edge.  I configured it to take a snapshot every boot so I'll always have a last known good configuration of something fairly recent.  I'm completely ignorant about btrfs and only really know that it can be snapshotted somehow.  Some tricksy thing they're doing under the hood to store what a filesystem looks like at a certain point in time.  It's voodoo I tell you.
+
+A good majority of my apps were just at the tip of my fingertips.  I didn't need to do anything for Brave, or Discord or Signal.  They were all available in the Arch repository.  This is a bonus because I manually update Discord in Debian.  It doesn't however support one of my favoriate apps... RIFT Intel Fusion Tool... there's a couple things wrong with that app in Cachy.  First off, the app doesn't minimize to the 'system tray' like it does in Debian and secondly it complains on startup that some x11 tools doesn't exist.  I have a general idea as to why the x11 tools aren't around but the not minimizing to the system tray... that's a new one.  1Password wasn't anywhere to be found though, maybe it's an AUR package?  I had to checkout a git repo and makepkg in there.  So no autoupdates on that...  Steam was available in the Arch repo's and freaking installed in like 10 seconds.  Glad almost all of my software was in the repos.
+
+Speed... that's one thing this OS is not lacking in.  Boot time is absurdly fast.  Logging in is absurdly fast.  Opening up Brave is absurdly fast.  This OS goes FAST!  It really makes me want to use it but the downfalls so far are really weighing on me.  I'll give it some time.
+
+I'm pretty sure I have now run into my final configuration.  Debian as my stable OS where I do most of my computing and CachyOS where I go to play with the most recent software and explore Linux.  I do love learning and the GNU/Linux eco system is amazingly deep and complex.  Being exposed to a bleeding edge OS will be good for me.  Although I've never really cared about the latest and greatest OS, stability has always reigned supreme with me.  But knowing what's coming and maybe even getting tapped into the Arch/CachyOS community would be good to expand my knowledge of what's out there.
