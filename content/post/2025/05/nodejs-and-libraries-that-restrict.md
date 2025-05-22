@@ -2,7 +2,7 @@
 title: "Node.js and Libraries That Restrict"
 date: 2025-05-22T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 I just recently grabbed my frontend code on my work laptop and tried to run `npm install`. I can't remember exactly what version of Node.js I had on there—it's been about 2 years since I upgraded, so it was old and crusty. I expected to get an error from a React component, which I did. So I grabbed the version they said they wanted, and then another library complained. This led me to just make sure I had the latest LTS installed. This resolved the issue.

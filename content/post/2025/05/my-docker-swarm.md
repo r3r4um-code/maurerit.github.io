@@ -2,7 +2,7 @@
 title: "My Docker Swarm"
 date: 2025-05-05T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 Sometime in early 2017 I began the search for a new job.  I knew I wanted to play with some of the newness that was out there.  Ideally they included kubernetes or docker-swarm or something similar.  So I searched around and ran across people running docker swarm on their raspberry pi's.  This is perfect, I have like 5 of these things.  I can showcase some projects.

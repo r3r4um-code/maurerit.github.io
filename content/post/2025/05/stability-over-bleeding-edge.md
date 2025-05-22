@@ -2,7 +2,7 @@
 title: "Stability Over Bleeding Edge"
 date: 2025-05-21T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: fase
 ---
 
 Like I said yesterday, I've been trialing CachyOS and while I do enjoy it, I find myself being drawn back to Debian. I've been talking to a buddy about the experience so far, and one thing I found funny was that a couple of my apps weren't the latest and greatest like they are in Debian. One was installed from a Git repo, which I'd have to update myself outside the yay -Syu update process. The other wasn't the version that I wanted.

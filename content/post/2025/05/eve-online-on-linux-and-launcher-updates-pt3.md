@@ -2,7 +2,7 @@
 title: "EVE Online on Linux and Launcher Updates Pt.3"
 date: 2025-05-19T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 I really want to get EVE to work on Bottles and Wine and Lutris. Why do I want all of them? Because people say they work, and I feel like I'm crazy because I can't get them to work. I've managed to get Wine partially working using wine-staging, but it binds up to my iGPU instead of my dGPU, which is rather annoying. I don't partake in fleet fights or any kind of activity of that nature; I play with graphics on high... I need my dedicated GPU. Bottles and Lutris have this switch to force the dGPU... I want to see if it works.

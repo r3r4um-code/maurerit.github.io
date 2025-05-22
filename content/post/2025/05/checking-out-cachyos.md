@@ -2,7 +2,7 @@
 title: "Checking Out CachyOS"
 date: 2025-05-20T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 I've wanted to try Arch for a while now, but I honestly can't be bothered to install absolutely everything myself. I'd just end up with a run-of-the-mill Linux and wouldn't venture out to experience new programs. For example, CachyOS ships eza as a replacement for ls. I would have never found eza and would never have seen the glory that it is on the CLI. They also aliased `apt` to `man pacman`, lol. So far, I'm impressed with the OS.
