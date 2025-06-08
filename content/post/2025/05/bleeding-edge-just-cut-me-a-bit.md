@@ -2,7 +2,7 @@
 title: "Bleeding Edge Just Cut Me a Bit"
 date: 2025-06-11T00:00:00-04:00
 author: "Matthew Maurer [maurerit](https://github.com/maurerit)"
-draft: true
+draft: false
 ---
 
 I'll preface this post with: I haven't spent much time looking for alternate JDK packages in CachyOS.
