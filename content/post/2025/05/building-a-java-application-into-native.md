@@ -25,6 +25,8 @@ Caused by: org.graalvm.nativeimage.MissingReflectionRegistrationError: The progr
 
 I ran across some documentation for this on GraalVM's [site](https://www.graalvm.org/jdk21/reference-manual/native-image/dynamic-features/Reflection/). Apparently, GraalVM doesn't understand reflection, so it provides a way to map how objects interact with other objects through reflection—I think that's right—and the community has built a ton of configurations for a ton of libraries, it seems, and Spring Boot or GraalVM integrates those configs into the build. Except for that Glassfish JAXB implementation, it seems. Damn, I was so close. But I'm tired, and I really don't need native images anyway. While it would be nice, memory is cheap, and this thing runs with 412M of actual memory on the host. In the Docker image I provide, the heap is set as low as 96M, so this app is pretty slim for a Java/Spring-Web/Hibernate/JAXB/EhCache/Spring-Retry/Spring-Scheduling stack.
 
+See all I did to get to where I got, maybe you'll be able to use it.  The commit is here: [mvn -Pnative clean native:compile](https://github.com/maurerit/vs-industry-backend/commit/80346d07bddbe90f7411298db08b2e4bd9d015b3)
+
 Now, through my searches, I've found a different optimization I want to do. Stay tuned.
 
 
