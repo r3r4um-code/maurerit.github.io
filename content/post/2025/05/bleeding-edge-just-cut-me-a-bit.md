@@ -15,6 +15,6 @@ While this is fine, it could catch a more junior developer off guard and prevent
 
 I knew instantly what the issue was, and while I should have just gone to Lombok's GitHub repository, I chose to search instead—that would get me to the correct issue faster anyway. I didn't spend much time reading through that post, but if I had, I would have seen at the end there's a link to a new PR completing the JDK 24 upgrade. Now I just have to override Spring's version until the Spring Boot parent matures and gets ready for JDK 24.
 
-Part of the fix is also to add a new configuration to the maven-compiler-plugin.  Do like [this](https://github.com/projectlombok/lombok/issues/3772#issuecomment-2763364839) comment points out
+Part of the fix is also to add a new configuration to the maven-compiler-plugin.  Do like [this](https://github.com/projectlombok/lombok/issues/3772#issuecomment-2763364839) comment points out.
 
 This will be fun watching how this plays out; I've always been slightly curious how Spring chooses which JDKs to support and how quickly they adopt the latest and greatest. Spring Boot moves fast though—fast for Java, at least. It's not React fast or Node.js fast, but for what it does, it moves seriously fast. Let's see what happens next.
