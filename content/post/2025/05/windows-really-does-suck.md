@@ -2,7 +2,7 @@
 title: "Windows Really Does Suck"
 date: 2025-06-09T10:13:57-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 This isn't anything groundbreaking, I know, but I felt like complaining about it. Two things really have been getting on my nerves after daily driving KDE for the past couple of months now. Maybe it has actually been several months since I've been in CachyOS now for nearly a month. Anyway, the main thing I've grown rather fond of is virtual desktops. I have a very specific setup which works perfectly for how I use a computer.
