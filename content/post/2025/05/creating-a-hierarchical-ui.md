@@ -2,7 +2,7 @@
 title: "Creating a Hierarchical UI"
 date: 2025-06-12T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 I need to create a hierarchical UI. Industry in EVE is multi-layered with multiple tech levels. There is Tech 1, 2, and 3, with Tech 2 depending on Tech 1, but Tech 3 not depending on Tech 2. Materials used for Tech 1 are harvested from asteroid belts and mining anomalies; Tech 2 materials are harvested from moons; Tech 3 materials are harvested from wormhole space. For Tech 2 and Tech 3, there are multiple phases of reactions you have to perform.
