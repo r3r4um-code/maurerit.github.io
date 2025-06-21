@@ -2,7 +2,7 @@
 title: "I bought a new NAS"
 date: 2025-06-20T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 My rewards stacked up finally, and I was able to replace my NAS chassis. Thankfully the drives were just fine—otherwise it would be a couple of months to get new ones :(. Unfortunately, I didn't have any of the photos that I was hoping I had. All I had were photos that we still have on our phones, which are backed up to iCloud, my computer, and S3. I think that is redundant enough. Oh, also, the NAS itself is backed up to AWS Glacier, so there is even yet another layer of redundancy. Even though I don't have any of those old memories of our old dog Bling, I'm happy to have the NAS back.
