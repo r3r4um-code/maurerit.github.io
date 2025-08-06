@@ -2,7 +2,7 @@
 title: "Playing With Ricing"
 date: 2025-08-23T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
-draft: true
+draft: false
 ---
 
 The Cachy theme that I've been using has been serving me well so far but I think it's time to explore what KDE can do.  Someone in a Discord I'm in linked a ricing (a customization of the look and feel) that someone did for KDE and shared an installer for it, so I checked it out and read through the script. The script seemed fine, installs a few things, backs up some config stuff and then applies some config stuff. Seems simple enough, so I executed the installer and let it do its thing.  While the script didn't do a whole lot, all the dotfiles did...  They had a fastfetch config, they applied oh-my-posh to a bash shell rc and even went as far as set my Konsole profile to open bash instead of fish and they completely changed the desktop.  These configs ran deep, I should have looked through them better... not that they would have made a whole lot of sense on their own.
