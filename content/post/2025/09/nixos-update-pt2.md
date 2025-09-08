@@ -1,6 +1,6 @@
 ---
 title: "NixOS Part 2"
-date: 2025-09-20T00:00:00-04:00
+date: 2025-09-27T00:00:00-04:00
 author: Matthew Maurer [maurerit](https://github.com/maurerit)
 draft: false
 ---
