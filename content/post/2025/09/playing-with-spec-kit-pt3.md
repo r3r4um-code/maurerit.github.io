@@ -23,4 +23,6 @@ Starting to get frustrating.  Even with all these guardrails it's still running 
 
 After much hassle I got it to work, if you're following along the interactions were from commit hash 0c8b5bd4c0dd - 167ef6d2ac and the memory files are 094 - 104
 
+That was all just to get the AuthController working.  The UserController submitted to the AI's will much easier.
+
 I'm too exhausted to compose this into a proper blog post so all you get are these disconnected thoughts.  Have fun.
