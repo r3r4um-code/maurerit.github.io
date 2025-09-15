@@ -13,7 +13,7 @@ Hi there! I'm Matt Maurer, a seasoned developer with a passion for technology, p
 
 - **[About Me](/about/)**: Learn more about my background, interests, and what drives me as a developer.
 - **[My Tech Journey](/my-tech-journey/)**: A deep dive into my non-work experiences and growth in the tech world.
-- **[My Autonomous Tank Project](/post/my-autonomous-tank/)**: Explore one of my favorite projects, where I built an autonomous tank using an Arduino and C++.
+- **[My Autonomous Tank Project](/post/2025/04/my-autonomous-tank/)**: Explore one of my favorite projects, where I built an autonomous tank using an Arduino and C++.
 
 ## What You'll Find Here
 
