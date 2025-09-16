@@ -1,7 +1,7 @@
 baseURL = 'https://maurerit.github.io/'
 languageCode = 'en-us'
 title = 'maurerit@github'
-theme = 'risotto'
+theme = 'hugo-blog-awesome'
 
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -20,6 +20,12 @@ palette = "windows-95"
 title = "maurerit"
 description = "The GitHub home of Matt Maurer"
 logo = "images/rice.svg"
+
+[params.author]
+avatar = "avatar.jpg"
+intro = "Through the mind of a curious developer"
+name = "Matthew Maurer"
+description = "The small internet home of me, Matt Maurer.  Thanks GitHub!"
 
 # Sidebar: social links
 # Available icon sets:
