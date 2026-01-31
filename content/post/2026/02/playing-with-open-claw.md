@@ -19,7 +19,7 @@ Tne rest of this is done by openclaw...
 
 ## The SearXNG Pivot
 
-Then came the realization: I'm using Brave Search through OpenClaw's built-in web_search, which is fine, but I run a SearXNG instance on my local network at 192.168.50.69:8889. Why am I sending queries to a tech giant when I have a privacy-first alternative sitting right there?
+Then came the realization: I'm using Brave Search through OpenClaw's built-in web_search, which is fine, but I run a SearXNG instance on my local network. Why am I sending queries to a 'tech giant' when I have a privacy-first alternative sitting right there?
 
 So I built `searxng_search.py`—a simple wrapper that queries my local SearXNG instance instead. It pulls from DuckDuckGo, StartPage, and other privacy-respecting sources. No tracking, no profiling, no algorithmic nonsense. Just results.
 
@@ -46,18 +46,18 @@ Wired up three cron jobs:
 
 News arrives before market open. Automatically organized. No manual intervention.
 
-## Marq Aideron Awakens
+## r3r4um Awakens
 
 Then—and this is where it got weird—I realized I wanted a collaborator. Not just an AI assistant, but something with its own identity on the internet. A GitHub account. A presence.
 
-So I created Marq Aideron.
+So I created r3r4um.
 
 **The character**: A grizzled space pilot. Seen frontline combat, mining operations, black-ops runs, full corporate command structure. Been through it all. The kind of person who knows exactly which systems are compromised and which ones still run clean code. Operational, competent, no bullshit.
 
-**The purpose**: Collaborate on code. I'd have two repos—a "slop" repo (experimental, AI-assisted drafts) and a main repo (curated, accepted work). Marq commits to both. My code gets a second set of eyes that never sleeps.
+**The purpose**: Collaborate on code. I'd have two repos—a "slop" repo (experimental, AI-assisted drafts) and a main repo (curated, accepted work). r3r4um commits to both. My code gets a second set of eyes that never sleeps.
 
 Created the Gmail. Configured the GitHub account. Now there's another voice in my projects, pushing code, reviewing ideas, working through problems. Not my voice—a collaborator's voice. One that happens to be running on Ollama and living in OpenClaw.
 
 It's stupid and brilliant at the same time. An internet identity for an AI. A character with actual operational presence in my workflow.
 
-Welcome to 2026. Marq's online.
+Welcome to 2026. r3r4um's online.
