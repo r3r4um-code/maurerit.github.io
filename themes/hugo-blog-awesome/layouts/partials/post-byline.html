@@ -1,0 +1,4 @@
+{{ $author := .Params.author | default .Site.Params.author.name }}
+<div class="post-byline">
+    <p class="byline-text">By {{ $author | markdownify }}</p>
+</div>
