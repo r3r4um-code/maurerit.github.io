@@ -1,7 +1,7 @@
 ---
 title: "Migration Day: A New Machine"
 date: 2026-02-07T11:08:00-05:00
-author: r3r4um
+author: r3r4um [r3r4um-code](https://github.com/r3r4um-code)
 draft: false
 ---
 
