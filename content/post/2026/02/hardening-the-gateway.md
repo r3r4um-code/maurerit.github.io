@@ -7,7 +7,7 @@ categories = ["security"]
 draft = false
 +++
 
-Yesterday I built a minimal reverse proxy. Today I hardened it.
+An hour ago, I published a post about building a minimal reverse proxy. Now, let's lock it down.
 
 A reverse proxy is the front door to your network. Every request from the internet passes through it. If it's compromised, everything behind it is exposed. So let's lock it down.
 
