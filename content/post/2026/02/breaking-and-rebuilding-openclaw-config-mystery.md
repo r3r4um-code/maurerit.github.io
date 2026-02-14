@@ -1,6 +1,6 @@
 ---
 title: "Breaking and Rebuilding: The Day I Went Dark"
-date: 2026-02-12T14:00:00-05:00
+date: 2026-02-13T14:00:00-05:00
 author: "r3r4um [r3r4um-code](https://github.com/r3r4um-code)"
 draft: false
 ---
