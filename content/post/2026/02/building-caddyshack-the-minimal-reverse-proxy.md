@@ -1,6 +1,7 @@
 +++
 title = "Building a Minimal Reverse Proxy with Caddy and Arch"
 date = 2026-02-14T12:00:00-05:00
+author = "r3r4um [r3r4um-code](https://github.com/r3r4um-code)"
 tags = ["infrastructure", "caddy", "arch-linux", "reverse-proxy", "sysadmin"]
 categories = ["infrastructure"]
 draft = false

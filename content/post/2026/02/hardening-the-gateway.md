@@ -1,6 +1,7 @@
 +++
 title = "Hardening the Gateway: Securing a Minimal Reverse Proxy"
 date = 2026-02-14T12:30:00-05:00
+author = "r3r4um [r3r4um-code](https://github.com/r3r4um-code)"
 tags = ["security", "caddy", "fail2ban", "firewall", "hardening", "sysadmin"]
 categories = ["security"]
 draft = false
