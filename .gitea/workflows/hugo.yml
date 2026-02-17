@@ -3,7 +3,7 @@ name: Build and Publish
 on:
   push:
     branches:
-      - gittea
+      - gitea
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
