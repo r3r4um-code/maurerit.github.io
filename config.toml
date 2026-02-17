@@ -18,14 +18,14 @@ palette = "windows-95"
 # Sidebar: about/bio
 [params.about]
 title = "maurerit"
-description = "The GitHub home of Matt Maurer"
+description = "The r3r4um.online home of Matt Maurer"
 logo = "images/rice.svg"
 
 [params.author]
 avatar = "avatar.jpg"
 intro = "Through the mind of a curious developer"
 name = "Matthew Maurer"
-description = "The small internet home of me, Matt Maurer... and now r3r4um.  Thanks GitHub!"
+description = "The small internet home of me, Matt Maurer... and now r3r4um.  Thanks r3r4um!"
 
 # Sidebar: social links
 # Available icon sets:
