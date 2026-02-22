@@ -23,6 +23,7 @@ logo = "images/rice.svg"
 
 [params.author]
 avatar = "avatar.jpg"
+email = "maurer.it@gmail.com"
 intro = "Through the mind of a curious developer"
 name = "Matthew Maurer"
 description = "The small internet home of me, Matt Maurer... and now r3r4um.  Thanks r3r4um!"
@@ -94,7 +95,7 @@ unsafe = true
     disabled = false
     simple = true
 
-  [privacy.twitter]
+  [privacy.x]
     disabled = false
     enableDNT = true
     simple = true
@@ -112,6 +113,6 @@ unsafe = true
   [services.instagram]
     disableInlineCSS = true
 
-  [services.twitter]
+  [services.x]
     disableInlineCSS = true
 

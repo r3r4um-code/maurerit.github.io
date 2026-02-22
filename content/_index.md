@@ -2,6 +2,7 @@
 
 title: "Welcome to My Site"
 date: 2025-04-29T00:00:00-04:00
+author: Matthew Maurer [maurerit](https://github.com/maurerit)
 draft: false
 ---
 
