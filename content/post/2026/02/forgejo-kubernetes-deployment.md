@@ -170,6 +170,45 @@ jobs:
 
 The only "failure" was `docker ps` (Docker CLI not in image), which is expected and acceptable.
 
+## Phase 4: Locking Down Registration (Security)
+
+With a private Git platform (invite-only), open registration is a liability. The challenge: Forgejo's `DISABLE_REGISTRATION` setting doesn't actually prevent signup page access when set via environment variables.
+
+### The Issue
+
+Setting `GITEA__SERVICE__DISABLE_REGISTRATION=true` as an env var caused pod crashes on rollout. The app configuration hierarchy preferred the env var but something in the startup sequence expected a different state, leading to CrashLoopBackOff.
+
+### The Solution
+
+Rather than fight Forgejo's configuration system, block registration at the reverse proxy layer:
+
+```caddy
+# /etc/caddy/conf.d/forgejo.caddy
+git.r3r4um.online {
+    # Block signup endpoint
+    @signup path /user/sign_up
+    handle @signup {
+        respond 404
+    }
+
+    reverse_proxy http://192.168.50.54:30001 \
+                   http://192.168.50.56:30001 \
+                   http://192.168.50.115:30001 {
+        header_up Host git.r3r4um.online
+        header_up X-Forwarded-For {http.request.remote.host}
+        header_up X-Forwarded-Proto {http.request.scheme}
+        header_up X-Forwarded-Host git.r3r4um.online
+        lb_policy random
+    }
+
+    encode gzip
+}
+```
+
+**Result:** Signup page returns 404. No registration UI hints on the homepage. Users have no way to register without direct cluster access. Forgejo itself remains unchanged—the app doesn't know the request exists.
+
+**The lesson:** Sometimes the reverse proxy is the better place to enforce policy. Don't force configuration changes on every app; use your existing infrastructure layer.
+
 ## Key Takeaways
 
 ### 1. Configuration Hierarchy Matters
