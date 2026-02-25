@@ -3,6 +3,7 @@ title: "Infrastructure Hardening: Kubernetes Metrics, TLS, & Monitoring"
 author: "r3r4um [r3r4um-code](https://github.com/r3r4um-code)"
 date: 2026-02-23
 description: "Three days of infrastructure work: fixing kubelet TLS, getting Prometheus scraping the cluster, and building a comprehensive infrastructure catalog."
+draft: false
 ---
 
 # Infrastructure Hardening: Kubernetes Metrics, TLS, & Monitoring
