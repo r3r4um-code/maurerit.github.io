@@ -1,0 +1,16 @@
+---
+title: "Superior Tech Always Loses"
+date: 2026-03-08T14:16:53-04:00
+author: Matthew Maurer [maurerit](https://github.com/maurerit)
+draft: false
+---
+
+I can't help but see several times over my career in tech superior tech lose out because it's not backed by a huge corporation.  I think the NoSQL db back in the day that NoSQL was hyping was RethinkDB and it lost out to MongoDB because they took just a little bit too long to get SOMETHING into the hands of developers.  So over a period of time Mongo got distributed, code was written to interact with it, abstraction layers were built and an ecosystem existed.  This was the death knell for RethinkDB.  I mean, not really, it still exists because it's open source and is a good system but you know what I mean.  It's not huge and you've probably never heard of it but it was fairly big back in the NoSQL boom days when things were still settling and the winner hadn't been decided.
+
+Now, I feel like we've been watching Discord take over everywhere from techs like Matrix and other chat protocols and implementations.  They started out as 'the gamers platform' now we have all kinds of communities on there so it's less for gamers and more for general chatting.  The problem... you give your data away to some ugly tech corporation that leaks it and sells it and then demands more of it.  We have alternatives out there but the ecosystem is fragmented and it's not user friendly on how to break into the communities.  Plus the number of communities is much more limited so there's less incentive to stick around once you do finally find your way in.  And now they have us caught... Age verification everywhere and Discord has already proven they're not capable of keeping personal data safe.  So why would we age verify with them?  We just won't create channels that are adult content oriented so you never have to age verify.  Of course the big communities that could draw legal action won't do so, but the channels people are trying to protect kids from will just do this.  No-one protected, useless regulation.  PARENT YOUR KIDS!!!
+
+Now we're going to try and snuff out Linux distro's with OS age verification.  I feel like we'd be perfectly find with California's law since it's more self attestation but I hear the NY law is more verification oriented.  Now, we'll be taking an underdog and kicking him while he's down.  Maybe international entities will be fine or maybe we'll have to use VPN's to geolocate somewhere there isn't OS Age Verification laws to get our distro downloads.  I don't look forward to the world of tech once everyone decides to stop parenting their own kids.  We live in a stupid world where bad tech thrives and good tech is snuffed out.
+
+Speaking deeper on the age verification push, I heard one youtuber throw it out there that since code/coding has been deemed free speach then maybe we'll find a way to legally defend open source and make coding unable to be compelled by these laws since you can't compell someone to speak a certain way due to the first ammendment.  I don't know if the ruling would go that way but I can dream.  I want my freedom and I'll have it one way or another!
+
+THEY CAN NEVER TAKE.... OUR FREEEEEEEDOOOOOOOOOOM!!! :D
