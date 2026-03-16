@@ -49,7 +49,7 @@ jobs:
           git config user.name "Build Workflow"
           
           echo "Building Hugo site..."
-          hugo --gc --minify --baseURL "https://maurerit.r3r4um.online/"
+          hugo --gc --minify --baseURL "https://matt.r3r4um.dev/"
           echo "Build complete"
           
           cp -r public "$WORK_DIR/public-built"
