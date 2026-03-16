@@ -18,7 +18,7 @@ palette = "windows-95"
 # Sidebar: about/bio
 [params.about]
 title = "maurerit"
-description = "The r3r4um.online home of Matt Maurer"
+description = "The r3r4um.dev home of Matt Maurer"
 logo = "images/rice.svg"
 
 [params.author]
