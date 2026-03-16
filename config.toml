@@ -1,4 +1,4 @@
-baseURL = 'https://maurerit.r3r4um.online/'
+baseURL = 'https://matt.r3r4um.dev/'
 languageCode = 'en-us'
 title = 'maurerit@github'
 theme = 'hugo-blog-awesome'
