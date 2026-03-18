@@ -34,7 +34,7 @@ jobs:
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
-      - name: Clone and build
+      - name: Clone repo
         run: |
           REPO_URL="ssh://git@git.r3r4um.online:2222/maurerit/maurerit.r3r4um.online.git"
           WORK_DIR="/tmp/blog-build"
@@ -47,14 +47,32 @@ jobs:
           cd repo
           git config user.email "workflow@r3r4um.online"
           git config user.name "Build Workflow"
+
+      - name: Build for HTTPS (matt.r3r4um.dev)
+        run: |
+          WORK_DIR="/tmp/blog-build"
           
-          echo "Building Hugo site..."
+          cd "$WORK_DIR/repo"
+          
+          echo "Building Hugo site for matt.r3r4um.dev..."
           hugo --gc --minify --baseURL "https://matt.r3r4um.dev/"
           echo "Build complete"
           
-          cp -r public "$WORK_DIR/public-built"
+          cp -r public "$WORK_DIR/public-https"
 
-      - name: Publish to publish branch
+      - name: Build for I2P (matt.r3r4um.i2p)
+        run: |
+          WORK_DIR="/tmp/blog-build"
+          
+          cd "$WORK_DIR/repo"
+          
+          echo "Building Hugo site for matt.r3r4um.i2p..."
+          hugo --gc --minify --baseURL "http://matt.r3r4um.i2p/"
+          echo "Build complete"
+          
+          cp -r public "$WORK_DIR/public-i2p"
+
+      - name: Publish to publish branch (HTTPS)
         run: |
           REPO_URL="ssh://git@git.r3r4um.online:2222/maurerit/maurerit.r3r4um.online.git"
           WORK_DIR="/tmp/blog-build"
@@ -65,10 +83,29 @@ jobs:
           git checkout -B publish origin/publish
           
           find . -mindepth 1 -not -path './.git*' -delete
-          cp -r "$WORK_DIR/public-built"/* .
+          cp -r "$WORK_DIR/public-https"/* .
           
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "build: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push -u origin publish
+          fi
+
+      - name: Publish to i2ppublish branch (I2P)
+        run: |
+          REPO_URL="ssh://git@git.r3r4um.online:2222/maurerit/maurerit.r3r4um.online.git"
+          WORK_DIR="/tmp/blog-build"
+          
+          cd "$WORK_DIR/repo"
+          
+          git fetch origin i2ppublish || true
+          git checkout -B i2ppublish origin/i2ppublish || git checkout --orphan i2ppublish
+          
+          find . -mindepth 1 -not -path './.git*' -delete
+          cp -r "$WORK_DIR/public-i2p"/* .
+          
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "build: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push -u origin i2ppublish
           fi
