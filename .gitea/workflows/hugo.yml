@@ -60,14 +60,14 @@ jobs:
           
           cp -r public "$WORK_DIR/public-https"
 
-      - name: Build for I2P (matt.r3r4um.i2p)
+      - name: Build for I2P (d2mzdfz3woh544zahl76mn4h2ajumxetlj3wxctgd4ximyjytrxa.b32.i2p)
         run: |
           WORK_DIR="/tmp/blog-build"
           
           cd "$WORK_DIR/repo"
           
-          echo "Building Hugo site for matt.r3r4um.i2p..."
-          hugo --gc --minify --baseURL "http://matt.r3r4um.i2p/"
+          echo "Building Hugo site for I2P..."
+          hugo --gc --minify --baseURL "http://d2mzdfz3woh544zahl76mn4h2ajumxetlj3wxctgd4ximyjytrxa.b32.i2p/"
           echo "Build complete"
           
           cp -r public "$WORK_DIR/public-i2p"
