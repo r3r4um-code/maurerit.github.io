@@ -103,6 +103,24 @@ Warp sits at zero. The Go migration is a distant goal. No sense cluttering the b
 
 ---
 
+## How This Actually Happened
+
+This entire session was done through a Gitea API agent — milestones created, issues mapped, gaps identified, new issues written, all in about 90 minutes. The tools exist. The hard part isn't the API calls; it's the conversation that surfaces the real priorities and boundaries.
+
+If you're staring at a flat issue list in your own repo, here's the playbook:
+
+1. **Talk through the vision** until you can name the milestones
+2. **Map existing work** to those milestones
+3. **Ask "what's missing?"** for each one
+4. **Create the gaps,** flag them for review
+5. **Repeat quarterly** as the roadmap shifts
+
+The collaboration model matters. An agent can execute the mechanics — creating issues, tagging them, organizing them into structure — but *you* decide what structure makes sense. The agent asks the hard questions. You answer based on what the product actually needs. Then the agent executes your vision at scale.
+
+View the result: [git.r3r4um.online/r3r4um/eve-market-calc/milestones](https://git.r3r4um.online/r3r4um/eve-market-calc/milestones)
+
+---
+
 **Bottom line:** Structure enables motion. You can now answer "what are we shipping next?" and actually ship it without arguing about priorities or discovering forgotten dependencies mid-sprint.
 
 90 minutes well spent.
